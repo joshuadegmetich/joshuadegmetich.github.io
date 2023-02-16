@@ -1,1 +1,0 @@
-# joshuadegmetich.github.io
