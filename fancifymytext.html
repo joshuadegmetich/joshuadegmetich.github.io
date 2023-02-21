@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fancify Shamcify</title>
+
+	<script src="fancifymytext.js">
+	</script>
+
+	<script>
+		function makeBigger() {
+			document.getElementById("textInput").style.fontSize="24pt";
+		}
+		function moo() {
+			document.getElementById("textInput").style.textTransform="uppercase";
+			var text = document.createTextNode("-moo");
+			document.getElementById("textInput").appendChild(text);
+		}
+	</script>
+
+	</head>
+
+	<body>
+		<h1>Fancify my Text</h1>
+		
+		<fieldset>
+			<legend>Text</legend>
+				<textarea id="textInput" type="text" id="myText" value="" cols="30" rows="4"></textarea>
+		</fieldset>
+	
+		<fieldset>
+			<legend>Fancify</legend>
+			<button onclick="makeBigger()">Bigger!</button>
+			<button onclick="moo()">Moo</button>
+			FancySchmancy: <input type="radio" id="FS" onchange="warningMessage()">
+			BoringBetty: <input type="radio" id="BB" onchange="warningMessageBoring()">
+		</fieldset>
+		
+	</body>
+</html>
